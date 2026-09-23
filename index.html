@@ -9,8 +9,8 @@
       content="Accessible loans tailored to your needs. Seamless application, quick approvals, and transparent terms."
     />
 
-    <link rel="icon" type="image/png" href="./assets/favicon.png" />
-    <link rel="apple-touch-icon" href="./assets/favicon.png" />
+    <link rel="icon" type="image/png" href="./favicon.png" />
+    <link rel="apple-touch-icon" href="./favicon.png" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -32,24 +32,31 @@
                 "sans-serif",
               ],
             },
+            // Brand base colours, shared with the Angular staff app and the
+            // Android app: #622B14 deep brown, #995F2F mid brown, #978F66
+            // olive, #E4D6A9 sand. The other steps are interpolated.
             colors: {
               brand: {
-                50: "#f1f9f3",
-                100: "#d8ecdf",
-                200: "#b4dcc0",
-                500: "#1f9a4c",
-                600: "#1a8443",
-                700: "#126c31",
-                800: "#0d5525",
+                50: "#fbf7ec",
+                100: "#f3e9cf",
+                200: "#e4d6a9",
+                300: "#d3c08c",
+                400: "#b98f5b",
+                500: "#995f2f",
+                600: "#874f27",
+                700: "#713c1d",
+                800: "#622b14",
+                900: "#4a2010",
+                olive: "#978f66",
               },
-              ink: "#10243d",
-              body: "#4d5c6e",
-              mist: "#eef2fb",
-              haze: "#f7f8fc",
-              steel: "#e9edf7",
+              ink: "#2b1a10",
+              body: "#6b5a48",
+              mist: "#f9f3e4",
+              haze: "#fdfbf4",
+              steel: "#ede3c8",
             },
             boxShadow: {
-              card: "0 1px 2px rgba(16,36,61,.04), 0 8px 24px -16px rgba(16,36,61,.18)",
+              card: "0 1px 2px rgba(43,26,16,.05), 0 8px 24px -16px rgba(43,26,16,.22)",
             },
             borderRadius: { "4xl": "2rem" },
           },
@@ -62,7 +69,7 @@
         -webkit-font-smoothing: antialiased;
       }
       :focus-visible {
-        outline: 2px solid #126c31;
+        outline: 2px solid #713c1d;
         outline-offset: 2px;
         border-radius: 4px;
       }
@@ -86,7 +93,7 @@
         appearance: none;
         height: 8px;
         border-radius: 999px;
-        background: #e9edf7;
+        background: #ede3c8;
         outline: none;
         cursor: pointer;
       }
@@ -96,9 +103,9 @@
         height: 22px;
         width: 22px;
         border-radius: 999px;
-        background: #126c31;
+        background: #713c1d;
         border: 3px solid #ffffff;
-        box-shadow: 0 1px 2px rgba(16, 36, 61, 0.25);
+        box-shadow: 0 1px 2px rgba(43, 26, 16, 0.25);
         cursor: pointer;
         margin-top: -1px;
       }
@@ -106,15 +113,15 @@
         height: 22px;
         width: 22px;
         border-radius: 999px;
-        background: #126c31;
+        background: #713c1d;
         border: 3px solid #ffffff;
-        box-shadow: 0 1px 2px rgba(16, 36, 61, 0.25);
+        box-shadow: 0 1px 2px rgba(43, 26, 16, 0.25);
         cursor: pointer;
       }
       .qd-range::-moz-range-track {
         height: 8px;
         border-radius: 999px;
-        background: #e9edf7;
+        background: #ede3c8;
       }
     </style>
   </head>
@@ -193,11 +200,11 @@
 
         <div class="relative mx-auto max-w-3xl px-5 py-20 text-center sm:py-28">
           <img
-            src="./logo-mark.png"
+            src="./logo-stacked.png"
             alt="Quick Duit"
-            width="512"
-            height="512"
-            class="mx-auto h-16 w-16 sm:h-20 sm:w-20 reveal-on-scroll opacity-0 -translate-y-4 transition-all duration-700 ease-out"
+            width="756"
+            height="640"
+            class="mx-auto h-28 w-auto object-contain sm:h-36 reveal-on-scroll opacity-0 -translate-y-4 transition-all duration-700 ease-out"
           />
 
           <h1 class="mt-8 text-4xl font-extrabold leading-[1.14] tracking-tight sm:text-5xl md:text-[3.4rem] reveal-on-scroll opacity-0 translate-y-8 transition-all duration-700 delay-100 ease-out">
@@ -279,7 +286,7 @@
               <span class="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-brand-100 text-brand-700">
                 <svg class="h-6 w-6" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                   <path d="M12 2 4 5.2v6c0 4.7 3.2 8.9 8 10.8 4.8-1.9 8-6.1 8-10.8v-6z" />
-                  <path d="m8.6 11.8 2.3 2.3 4.4-4.7" fill="none" stroke="#d8ecdf" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="m8.6 11.8 2.3 2.3 4.4-4.7" fill="none" stroke="#f3e9cf" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
               </span>
               <h3 class="mt-6 text-xl font-bold tracking-tight">Secure &amp; Transparent</h3>
